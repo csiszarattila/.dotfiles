@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+        name = Csiszár Attila
+        email = csiszar.ati@gmail.com
+[push]
+        default = current
+[core]
+        editor = vim
+        autocrlf = false
+        whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
+        filemode = false        
+        pager = diff-so-fancy | less --tabs=4 -RFX
+[merge]
+        tool = kdiff3
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[pager]
+        log = diff-highlight | less
+        show = diff-so-fancy | less --tabs=4 -RFX
+        diff = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+        co = checkout

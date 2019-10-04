@@ -69,3 +69,5 @@ alias dc='docker-compose'
 function prof_branch_name_generator() {
     echo "feature/$1" | tr -d '(' | tr -d ')' | tr ' ' '-' | sed 's/--//g' | unaccent utf8
 }
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

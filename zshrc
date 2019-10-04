@@ -60,6 +60,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:/usr/local/sbin
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 alias g='git'
 alias t='tig'

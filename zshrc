@@ -2,9 +2,14 @@
 
 source $HOME/antigen.zsh
 
-antigen bundle zsh-users/zsh-syntax-highlighting
 antigen use oh-my-zsh
-antigen bundle autojump
+
+antigen bundles <<EOBUNDLES
+	autojump
+	colored-man-pages
+	zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
 antigen apply
 
 # Use emacs keybindings even if our EDITOR is set to vi

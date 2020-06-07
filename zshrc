@@ -5,9 +5,10 @@ source $HOME/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
-	autojump
 	colored-man-pages
+	fzf
 	zsh-users/zsh-syntax-highlighting
+	zsh-users/zsh-autosuggestions
 EOBUNDLES
 
 antigen apply

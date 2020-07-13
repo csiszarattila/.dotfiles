@@ -12,11 +12,22 @@
         filemode = false        
         pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
-        tool = kdiff3
+        tool = pstorm
+	conflictstyle = diff3
+
 [mergetool]
+	tool = pstorm
         keepBackup = false
+
 [difftool]
         prompt = false
+
+[difftool.pstorm]
+  cmd = /home/csiszar/.local/share/JetBrains/Toolbox/bin/phpstorm diff "$LOCAL" "$REMOTE"
+
+[mergetool.pstorm]
+  cmd = /home/csiszar/.local/share/JetBrains/Toolbox/bin/phpstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+
 [pager]
         log = diff-highlight | less
         show = diff-so-fancy | less --tabs=4 -RFX

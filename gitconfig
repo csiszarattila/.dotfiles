@@ -29,8 +29,18 @@
   cmd = /home/csiszar/.local/share/JetBrains/Toolbox/bin/phpstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 
 [pager]
-        log = diff-highlight | less
-        show = diff-so-fancy | less --tabs=4 -RFX
-        diff = diff-so-fancy | less --tabs=4 -RFX
+
+[core]
+    pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+
+[interactive]
+    diffFilter = delta --color-only
+
+#        log = diff-highlight | less
+#        show = diff-so-fancy | less --tabs=4 -RFX
+#        diff = diff-so-fancy | less --tabs=4 -RFX
+
 [alias]
         co = checkout
+[color]
+	ui = auto
